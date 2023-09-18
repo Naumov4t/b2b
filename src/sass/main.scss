@@ -1,0 +1,84 @@
+@import "font.scss";
+@import "variables.scss";
+
+@import "block/main-section.scss";
+@import "block/features-section.scss";
+@import "block/clubs-section.scss";
+@import "block/service-section.scss";
+@import "block/brands-section.scss";
+@import "block/merch-section.scss";
+@import "block/networking-section.scss";
+@import "block/contacts-section.scss";
+@import "block/footer-section.scss";
+@import "block/clubs-slider-section.scss";
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+    user-select: none;
+}
+
+body {
+    background-color: $main;
+    color: $white;
+    font-family: "Montserrat";
+    background-image: url("../img/bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section, main, footer {
+    max-width: 1920px;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1, h2 {
+    font-family: "Wadik";
+
+    & span {
+        background: $gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+img {
+    pointer-events: none; 
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    width: fit-content;
+    background: $gradient;
+    transition: .1s;
+
+    & a {
+        display: block;
+        background: $gradient-btn;
+        color: $white;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: inherit;
+        white-space: nowrap;
+    }
+
+    &:hover {
+        transition: .2s;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transition: .2s;
+        transform: scale(1.03);
+    }
+}

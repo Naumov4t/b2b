@@ -1,0 +1,133 @@
+.clubs-slider-section {
+    padding: 0 15px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+    &__title {
+        font-size: 18px;
+    }
+
+    &__slider-wrapper {
+        margin-top: 40px;
+    }
+
+    &__item {
+        transition: .1s;
+
+        & img {
+            width: 100%;
+        }
+
+        & h4 {
+            margin-bottom: 8px;
+            font-family: "Wadik";
+            font-size: 16px;
+        }
+
+        & p {
+            font-size: 16px;
+        }
+    }
+
+    &__descr {
+        margin-top: -90px;
+        padding: 100px 15px 15px;
+        background-color: #230c4180;
+        border-radius: 0 0 10px 10px;
+    }
+
+    &__pag {
+        margin-right: 5px;
+        width: 20px;
+        height: 5px;
+        background-color: aqua;
+    }
+}
+
+.swiper-slide-prev:has(.clubs-slider-section__descr) .clubs-slider-section__descr {
+    background-color: $main;
+    color: $main;
+    transition: .1s;
+}
+
+.swiper-slide-prev:has(.clubs-slider-section__descr) img {
+    filter: grayscale(80%);
+    margin-top: 20px;
+    transition: .1s;
+}
+.swiper-slide-next:has(.clubs-slider-section__descr) .clubs-slider-section__descr {
+    background-color: $main;
+    color: $main;
+    transition: .1s;
+}
+
+.swiper-slide-next:has(.clubs-slider-section__descr) img {
+    filter: grayscale(80%);
+    margin-top: 20px;
+    transition: .1s;
+}
+
+@media (min-width: 640px) {
+    .clubs-slider-section {
+        padding: 0 25px;
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__slider-wrapper {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .clubs-slider-section {
+
+        &__title {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .clubs-slider-section {
+        padding: 0 35px; 
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .clubs-slider-section {
+        padding: 0 50px; 
+        margin-bottom: 80px;
+
+        &__title {
+            font-size: 38px;
+        }
+
+        &__slider-wrapper {
+            margin-top: 100px;
+        }
+
+        &__item {
+
+            & h4 {
+                font-size: 21px;
+            }
+    
+            & p {
+                font-size: 18px;
+            }
+        }
+
+        
+        &__descr {
+            margin-top: -80px;
+            padding: 100px 25px 25px;
+        }
+    }
+}

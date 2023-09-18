@@ -1,0 +1,471 @@
+.networking-section {
+    padding-top: 150px;
+    background-image: url("../img/network-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__zone-wrapper {
+        padding: 0 15px;
+        margin-top: 100px;
+        text-align: right;
+    }
+
+    &__title {
+        font-size: 18px;
+    }
+
+    &__descr {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    &__button {
+        margin: 40px auto;
+        padding: 2px;
+        border-radius: 25px;
+
+        & a {
+            padding: 16px 30px;
+            font-size: 14px;
+        }
+    }
+}
+
+.network {
+    padding: 0 15px;
+    position: relative;
+    max-width: 360px;
+    height: 220px;
+
+    &__content {
+        padding-top: 30px;
+        position: absolute;
+        width: 90%;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        padding-left: 15px;
+        font-family: "Wadik";
+        font-size: 10px;
+        color: $pink;
+    }
+
+    &__list {
+        padding-left: 15px;
+        max-width: 90%;
+    }
+
+    &__item {
+        margin-bottom: 5px;
+        position: relative;
+        font-size: 10px;
+        padding-left: 15px;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #fc00e3;
+            border-radius: 100%;
+        }
+    }
+
+    &__button {
+        margin: 15px auto 0;
+        padding: 1px;
+        border-radius: 25px;
+
+        & a {
+            padding: 9px 15px;
+            font-size: 9px;
+        }
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 360px) {
+    .network {
+
+        &__title {
+            padding-left: 20px;
+            font-size: 12px;
+        }
+
+        &__list {
+            padding-left: 20px;
+        }
+
+        &__item {
+            margin-bottom: 7px;
+            font-size: 11px;
+
+            &::before {
+                top: 1px;
+                width: 9px;
+                height: 9px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 425px) {
+    .network {
+        max-width: 420px;
+        height: 250px;
+
+        &__content {
+            padding-top: 30px;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            font-size: 14px;
+        }
+
+        &__list {
+            padding-left: 30px;
+        }
+
+        &__item {
+            font-size: 12px;
+
+            &::before {
+                top: 3px;
+            }
+        }
+
+        &__button {
+
+            & a {
+                padding: 11px 20px;
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .networking-section {
+        padding-top: 200px;
+        padding-bottom: 100px;
+        background-position: 50% 100%;
+
+        &__zone-wrapper {
+            padding: 0 25px;
+        }
+    }
+
+    .network {
+        padding: 0 25px;
+        max-width: 470px;
+
+        &__content {
+            padding-top: 35px;
+        }
+
+        &__button {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .networking-section {
+        padding-top: 150px;
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__button {
+            margin: 30px 0 auto auto;
+        }
+    }
+    .network {
+        max-width: 535px;
+        height: 310px;
+
+        &__content {
+            padding-top: 40px;
+        }
+
+        &__title {
+            margin-bottom: 18px;
+            font-size: 18px;
+        }
+
+        &__list {
+            padding-right: 45px;
+            max-width: none;
+        }
+
+        &__item {
+            padding-left: 18px;
+            margin-bottom: 9px;
+            font-size: 16px;
+
+            &::before {
+                top: 4px;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        &__button {
+            margin-top: 15px;
+            padding: 2px;
+
+            & a {
+                padding: 13px 23px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .networking-section {
+
+        &__title {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .networking-section {
+        margin-top: 40px;
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__button {
+            margin: 45px 0 auto auto;
+            border-radius: 40px;
+
+            & a {
+                padding: 19px 35px;
+                font-size: 16px;
+            }
+        }
+
+        &__zone-wrapper {
+            padding: 0 35px;
+        }
+    }
+
+    .network {
+        top: -85px;
+        padding: 0 35px;
+        max-width: 630px;
+        height: 360px;
+
+        &__content {
+            padding-top: 45px;
+            width: 88%;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        &__item {
+            padding-left: 20px;
+            font-size: 18px;
+
+            &::before {
+                top: 5px;
+                width: 11px;
+                height: 11px;
+            }
+        }
+
+        &__button {
+            
+            & a {
+                padding: 15px 30px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .networking-section {
+        padding-top: 260px;
+    }
+
+    .network {
+        top: -150px;
+        max-width: 670px;
+
+        &__title {
+            line-height: 30px;
+        }
+
+        &__button {
+            margin-top: 25px;
+        }
+
+    }
+}
+
+@media (min-width: 1440px) {
+    .networking-section {
+        margin-top: 70px;
+        padding-top: 280px;
+
+        &__title {
+            font-size: 38px;
+        }
+
+        &__descr {
+            font-size: 18px;
+        }
+
+        &__zone-wrapper {
+            padding: 0 50px;
+            margin-top: 80px;
+            margin-bottom: 100px;
+        }
+
+        &__button {
+            margin: 65px 0 auto auto;
+
+            & a {
+                padding: 23px 40px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .network {
+        top: -230px;
+        padding: 0 50px;
+        max-width: 750px;
+        height: 395px;
+
+        &__content {
+            width: 87%;
+        }
+
+        &__title {
+            margin-bottom: 35px;
+            padding-left: 40px;
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        &__list {
+            padding-left: 40px;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+            padding-left: 25px;
+            font-size: 18px;
+
+            &::before {
+                top: 4px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &__button {
+            margin-top: 45px;
+            border-radius: 35px;
+
+            & a {
+                padding: 18px 35px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .networking-section__zone-wrapper {
+        margin-bottom: 140px;
+    }
+
+}
+
+@media (min-width: 1820px) {
+    .networking-section {
+
+        &__title {
+            font-size: 51px;
+        }
+
+        &__descr {
+            font-size: 28px;
+        }
+
+        &__button {
+            padding: 4px;
+            border-radius: 60px;
+            
+            & a {
+                padding: 32px 65px;
+                font-size: 24px;
+            }
+        }
+    }
+    .network {
+        padding: 0 60px;
+        max-width: 910px;
+        height: 500px;
+
+        &__content {
+            padding-top: 75px;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+            padding-left: 50px;
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        &__list {
+            padding-right: 0;
+            padding-left: 50px;
+        }
+
+        &__item {
+            margin-bottom: 25px;
+            padding-left: 30px;
+            font-size: 22px;
+
+            &::before {
+                top: 6px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        &__button {
+            margin-top: 50px;
+            border-radius: 40px;
+
+            & a {
+                padding: 24px 45px;
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,227 @@
+.service-section {
+    margin-top: 80px;
+    padding: 0 15px;
+
+    &__title {
+        font-size: 18px;
+    }
+
+    &__list {
+        padding: 0;
+    }
+
+    &__item {
+        margin-top: 50px;
+    }
+
+    &__button {
+        margin: 60px auto 0;
+        padding: 2px;
+        border-radius: 25px;
+
+        & a {
+            padding: 16px 30px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    }
+}
+
+.service-description {
+    padding: 0;
+
+    &__title {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__title--blue {
+        color: $blue;
+    }
+
+    &__title--pink {
+        color: $pink;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 15px;
+        font-size: 16px;
+
+        &--blue::before {
+            position: absolute;
+            left: 0px;
+            top: 4px;
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: $blue;
+            border-radius: 100%;
+        }
+
+        &--pink::before {
+            position: absolute;
+            left: 0px;
+            top: 4px;
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: $pink;
+            border-radius: 100%;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .service-section {
+        padding: 0 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .service-section {
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__item {
+            margin-top: 70px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-section {
+        margin-top: 20px;
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+
+        &__button {
+            margin: 45px 0;
+            width: 270px;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .service-section {
+        padding: 0 35px;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__button {
+            width: 320px;
+            border-radius: 40px;
+
+            & a {
+                padding: 19px 35px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .service-section {
+        padding: 0 50px;
+
+        &__title {
+            font-size: 26px;
+        }
+    }
+
+    .service-description {
+
+        &__title {
+            margin-top: 30px;
+            margin-bottom: 25px;
+            font-size: 21px;
+        }
+
+        &__item {
+            margin-bottom: 17px;
+            padding-left: 25px;
+            font-size: 18px;
+
+            &--blue::before {
+                width: 12px;
+                height: 12px;
+            }
+
+            &--pink::before {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1820px) {
+    .service-section {
+        padding: 0 60px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__button {
+            width: 359px;
+            padding: 3px;
+
+            & a {
+                padding: 26px 40px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .service-description {
+
+        &__title {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-size: 26px;
+        }
+
+        &__item {
+            padding-left: 30px;
+            margin-bottom: 30px;
+            font-size: 22px;
+
+            &--blue::before {
+                top: 5px;
+                width: 15px;
+                height: 15px;
+            }
+
+            &--pink::before {
+                top: 5px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
